@@ -10,6 +10,13 @@ class HomePageScreen extends StatefulWidget {
 class _HomePageScreenState extends State<HomePageScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: [
+          Text("Hello"),
+        ],
+      ),
+    );
   }
 }
