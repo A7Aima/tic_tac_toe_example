@@ -33,6 +33,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/launcher/
+    - assets/images/application/
 
 flutter_icons:
   ios: true
@@ -47,11 +52,6 @@ flutter_native_splash:
   color: "#ffffff"
   fill: true
   android_disable_fullscreen: false
-  # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images/launcher/
-    - assets/images/
-    - assets/images/application/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

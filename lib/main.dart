@@ -1,9 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tic_tac_toe_example/initial_pages/splash_screen/splash_screen.dart';
+import 'package:tic_tac_toe_example/utilities/constants/app_theme/app_theme.dart';
 import 'package:tic_tac_toe_example/utilities/routes/routes.dart';
 
 void main() {
-  runApp(TicTacToeApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Color(0x44000000),
+    statusBarBrightness: Brightness.light,
+    // statusBarColor: Colors.transparent,
+    //   statusBarBrightness: Brightness.dark,
+    //   statusBarIconBrightness: Brightness.dark
+  ));
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((_) {
+    runApp(TicTacToeApp());
+  });
 }
 
 class TicTacToeApp extends StatelessWidget {
@@ -15,9 +30,7 @@ class TicTacToeApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tic Tac Toe',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: themeData,
       home: SplashScreen(),
       onGenerateRoute: (settings) => Routes.animateRoutes(settings),
     );

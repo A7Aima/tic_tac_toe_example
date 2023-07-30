@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe_example/initial_pages/login_screen/login_screen.dart';
 import 'package:tic_tac_toe_example/initial_pages/splash_screen/splash_screen.dart';
-import 'package:tic_tac_toe_example/ui/home_page/home_page.dart';
-import 'package:tic_tac_toe_example/ui/tic_tac_toe_screen/tic_tac_toe_screen.dart';
+import 'package:tic_tac_toe_example/ui/application/home_page/home_page.dart';
+import 'package:tic_tac_toe_example/ui/application/tic_tac_toe_screen/tic_tac_toe_screen.dart';
 
 class Routes {
   Routes._();
