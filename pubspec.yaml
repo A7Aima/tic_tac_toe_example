@@ -20,6 +20,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.12.0
 
 
 # For information on the generic Dart part of this file, see the
@@ -32,12 +33,14 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 flutter_icons:
   ios: true
   android: true
   image_path_ios: "assets/images/launcher/icon.png"
   image_path_android: "assets/images/launcher/icon.png"
   adaptive_icon_background: "#ffffff"
+  remove_alpha_ios: true
 
 flutter_native_splash:
   image: assets/images/launcher/launcher.jpg
@@ -46,8 +49,8 @@ flutter_native_splash:
   android_disable_fullscreen: false
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/launcher
-    - assets/images
+    - assets/images/launcher/
+    - assets/images/
     - assets/images/application/
 
   # An image asset can refer to one or more resolution-specific "variants", see
